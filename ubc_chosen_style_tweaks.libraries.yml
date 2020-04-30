@@ -1,0 +1,4 @@
+chosentweaks:
+  css:
+    theme:
+      css/chosen.style.tweaks.css: { }

@@ -1,0 +1,8 @@
+name: UBC Chosen Style Tweaks
+type: module
+description: This module adds some style tweaks to the default Chosen styles.
+package: UBC Web Services
+dependencies:
+  - drupal:chosen
+core: '8.x'
+core_version_requirement: ^8 || ^9

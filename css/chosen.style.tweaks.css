@@ -1,0 +1,25 @@
+/* Chosen select element */
+.chosen-container-single .chosen-single {
+  background: transparent;
+}
+
+.chosen-container-single .chosen-single,
+.chosen-container-active .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border-width: 0;
+  box-shadow: none;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  background-image: none;
+  box-shadow: none;
+}
+
+.chosen-container-single .chosen-single div b {
+  display: none;
+}
+
+/* Dropdown */
+.chosen-container .chosen-drop {
+  left: 0;
+}
