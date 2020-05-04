@@ -1,11 +1,14 @@
 /* Chosen select element */
-.chosen-container-single .chosen-single {
+.chosen-container-single .chosen-single,
+.chosen-container-multi .chosen-choices {
   background: transparent;
 }
 
 .chosen-container-single .chosen-single,
 .chosen-container-active .chosen-single,
-.chosen-container-active.chosen-with-drop .chosen-single {
+.chosen-container-multi .chosen-choices,
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-active .chosen-choices {
   border-width: 0;
   box-shadow: none;
 }
@@ -19,7 +22,50 @@
   display: none;
 }
 
+.chosen-container-multi .chosen-choices {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #eee), color-stop(15%, #fff));
+  background-image: linear-gradient(#eee 1%, #fff 15%);
+  cursor: text;
+  }
+
 /* Dropdown */
 .chosen-container .chosen-drop {
   left: 0;
+}
+
+/* Selected item styles */
+.chosen-container-multi .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 8px 20px 8px 8px;
+  border: none;
+  background-color: #003cc5;
+  background-image: none;
+  box-shadow: none;
+  color: #fff;
+  line-height: 13px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 14px;
+  background-image: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z' fill='%23fff'/%3E%3C/svg%3E");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  background-position: center;
+  background-color: #0036b1;
 }
