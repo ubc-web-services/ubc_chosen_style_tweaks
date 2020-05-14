@@ -62,4 +62,9 @@
   .js .vertical-tabs__item {
     overflow: visible;
   }
+
+  .js .vertical-tabs__item > summary {
+    display: block;
+  }
+
 }
