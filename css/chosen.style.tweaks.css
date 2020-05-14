@@ -64,7 +64,7 @@
   }
 
   .js .vertical-tabs__item > summary {
-    display: block;
+    display: block !important;
   }
 
 }
